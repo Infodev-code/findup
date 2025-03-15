@@ -1,6 +1,6 @@
 # FindUp - Plateforme de Formations et Jobs Étudiants
 
-FindUp est une application web moderne qui connecte les étudiants avec des formations de qualité et des opportunités d'emploi adaptées à leurs besoins.
+FindUp est une application web moderne qui connecte les étudiants avec des formations de qualité et des opportunités d'emploi adaptées a leurs besoins.
 
 ## Fonctionnalités
 
