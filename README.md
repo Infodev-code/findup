@@ -1,6 +1,6 @@
 # FindUp - Plateforme de Formations et Jobs Étudiants
 
-FindUp est une application web moderne qui connecte les étudiants avec des formations de qualité et des opportunités d'emploi adaptées a leurs besoins.
+FindUp est une application web moderne qui connecte les étudiants avec des formations de qualité et des opportunités d'emploi adaptées à leurs besoins.
 
 ## Fonctionnalités
 
@@ -69,6 +69,32 @@ npm run dev
 ├── .env.local         # Variables d'environnement (à créer)
 └── ...
 ```
+
+# Avant de commencer à travailler
+git pull
+
+# Créer une branche pour une nouvelle fonctionnalité
+git checkout -b ajout-recherche-avancee
+
+# [Faites vos modifications]
+
+# Vérifier les changements
+git status
+
+# Ajouter les fichiers modifiés
+git add .
+
+# Créer un commit
+git commit -m "Ajout de la recherche avancée pour les formations"
+
+# Pousser la branche vers GitHub
+git push -u origin ajout-recherche-avancee
+
+# [Sur GitHub, créez une Pull Request pour fusionner votre branche]
+
+
+
+
 
 ## Déploiement
 
