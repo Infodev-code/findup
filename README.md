@@ -70,27 +70,27 @@ npm run dev
 └── ...
 ```
 
-# Avant de commencer à travailler
+## Avant de commencer à travailler
 git pull
 
-# Créer une branche pour une nouvelle fonctionnalité
+## Créer une branche pour une nouvelle fonctionnalité
 git checkout -b ajout-recherche-avancee
 
-# [Faites vos modifications]
+## [Faites vos modifications]
 
-# Vérifier les changements
+## Vérifier les changements
 git status
 
-# Ajouter les fichiers modifiés
+## Ajouter les fichiers modifiés
 git add .
 
-# Créer un commit
+## Créer un commit
 git commit -m "Ajout de la recherche avancée pour les formations"
 
-# Pousser la branche vers GitHub
+## Pousser la branche vers GitHub
 git push -u origin ajout-recherche-avancee
 
-# [Sur GitHub, créez une Pull Request pour fusionner votre branche]
+## [Sur GitHub, créez une Pull Request pour fusionner votre branche]
 
 
 
