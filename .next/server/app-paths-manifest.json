@@ -1,8 +1,13 @@
 {
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/page": "app/page.js",
-  "/jobs/[id]/page": "app/jobs/[id]/page.js",
   "/jobs/page": "app/jobs/page.js",
+  "/jobs/[id]/page": "app/jobs/[id]/page.js",
+  "/api/jobs/[id]/route": "app/api/jobs/[id]/route.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/auth/login/page": "app/auth/login/page.js",
   "/formations/page": "app/formations/page.js",
-  "/api/jobs/[id]/route": "app/api/jobs/[id]/route.js"
+  "/profile/page": "app/profile/page.js",
+  "/api/users/profile/route": "app/api/users/profile/route.js",
+  "/api/users/formations/route": "app/api/users/formations/route.js",
+  "/api/users/applications/route": "app/api/users/applications/route.js"
 }
