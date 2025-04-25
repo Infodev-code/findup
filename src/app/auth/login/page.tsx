@@ -6,9 +6,6 @@ import { motion } from 'framer-motion';
 import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-// Désactiver le pré-rendu statique pour cette page
-export const dynamic = 'force-dynamic';
-
 export default function Login() {
   const router = useRouter();
   const searchParams = useSearchParams();

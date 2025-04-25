@@ -131,7 +131,7 @@ export async function POST(req: NextRequest) {
       status: 'active',
       progress: 0,
       startDate: new Date(),
-      moduleProgress: formation.modules.map((module: any) => ({
+      moduleProgress: formation.modules.map(module => ({
         moduleId: module._id,
         completed: false,
         progress: 0
