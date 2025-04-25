@@ -7,10 +7,13 @@ import Footer from '@/components/Footer';
 import { usePathname } from 'next/navigation';
 import DetailNavbar from '@/components/DetailNavbar';
 import AuthContext from '@/context/AuthContext';
+import { useEffect, useState } from 'react';
 
+// Optimiser le chargement des polices
 const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap',
 });
 
 export default function RootLayout({
@@ -19,6 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
+  const [domLoaded, setDomLoaded] = useState(false);
+
+  // Effet simplifié pour le chargement
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
 
   // Sections pour les pages de détail
   const formationSections = [
@@ -40,7 +49,7 @@ export default function RootLayout({
   const isDetailPage = isFormationDetail || isJobDetail;
 
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans`}>
         <AuthContext>
           <div className="min-h-screen flex flex-col">
@@ -49,6 +58,7 @@ export default function RootLayout({
             {isFormationDetail && (
               <DetailNavbar type="formation" sections={formationSections} />
             )}
+            
             {isJobDetail && (
               <DetailNavbar type="job" sections={jobSections} />
             )}
@@ -56,6 +66,7 @@ export default function RootLayout({
             <main className={`flex-grow ${isDetailPage ? '' : 'pt-16'}`}>
               {children}
             </main>
+            
             <Footer />
           </div>
         </AuthContext>

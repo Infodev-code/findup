@@ -69,30 +69,29 @@ npm run dev
 ├── .env.local         # Variables d'environnement (à créer)
 └── ...
 ```
+   # Comment travailler ?
 
-## Avant de commencer à travailler
-git pull
-
-## Créer une branche pour une nouvelle fonctionnalité
-git checkout -b ajout-recherche-avancee
-
-## [Faites vos modifications]
-
-## Vérifier les changements
-git status
-
-## Ajouter les fichiers modifiés
-git add .
-
-## Créer un commit
-git commit -m "Ajout de la recherche avancée pour les formations"
-
-## Pousser la branche vers GitHub
-git push -u origin ajout-recherche-avancee
-
-## [Sur GitHub, créez une Pull Request pour fusionner votre branche]
-
-
+   # Au début de chaque fonctionnalité
+   git checkout develop # se positionner sur la branche sur lasquelle on travaille
+   git pull origin develop # recuperer la derniere version
+   git checkout -b feature/ma-fonctionnalite # creer une nouvelle fonctionnalité
+   
+   # Pendant le développement (plusieurs fois par jour)
+   git add . # indexer les fichiers modifiés par git
+   git commit -m "feat: description précise" # enregistrer
+   git push origin feature/ma-fonctionnalite # charger sur github
+   
+   # Quand la fonctionnalité est terminée
+   git checkout develop
+   git pull origin develop
+   git checkout feature/ma-fonctionnalite
+   git merge develop       # Résoudre les conflits si nécessaire
+   git push origin feature/ma-fonctionnalite
+   
+   # Créer une Pull Request sur GitHub
+   # Après approbation et fusion
+   git checkout develop
+   git pull origin develop
 
 
 
