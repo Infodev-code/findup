@@ -35,6 +35,11 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
     optimisticClientCache: true,
+    // Désactiver le pré-rendu statique pour les pages d'authentification
+    unstable_allowDynamic: [
+      '/auth/login/**',
+      '/auth/reset-password/**',
+    ],
   },
 };
 

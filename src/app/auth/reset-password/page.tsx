@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useRouter, useSearchParams } from 'next/navigation';
 
+// Désactiver le pré-rendu statique pour cette page
+export const dynamic = 'force-dynamic';
+
 export default function ResetPassword() {
   const router = useRouter();
   const searchParams = useSearchParams();
