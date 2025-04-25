@@ -35,7 +35,7 @@ const fallbackUsers: (CustomUser & { password: string })[] = [
 ];
 
 // Configuration de NextAuth
-export const authOptions: NextAuthOptions = {
+const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
       name: 'Credentials',
